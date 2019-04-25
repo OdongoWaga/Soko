@@ -6,7 +6,7 @@ const Navbar = ({ user, handleSignout }) => (
 	<Nav mode="horizontal" theme="dark" defaultActive="1">
 		<div className="nav-container">
 			{/* App Title/ Icon */}
-			<Nav.Item idnex="1">
+			<Nav.Item index="1">
 				<NavLink to="/" className="nav-link">
 					<span className="app-title">
 						<img
