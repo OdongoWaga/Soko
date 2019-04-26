@@ -5,24 +5,24 @@ import { NavLink } from "react-router-dom";
 const Navbar = ({ user, handleSignout }) => (
 	<Nav mode="horizontal" theme="dark" defaultActive="1">
 		<div className="nav-container">
-			{/* App Title/ Icon */}
+			{/* App Title / Icon */}
 			<Nav.Item index="1">
 				<NavLink to="/" className="nav-link">
 					<span className="app-title">
 						<img
 							src="https://icon.now.sh/account_balance/f90"
-							alt="Icon"
 							className="app-icon"
+							alt="Amazon Logo"
 						/>
-						SOKO
+						AmplifyAgora
 					</span>
 				</NavLink>
 			</Nav.Item>
-			{/*Navbar Item*/}
 
-			<div className="nav-item">
+			{/* Navbar Items */}
+			<div className="nav-items">
 				<Nav.Item index="2">
-					<span className="app-user"> Hello, {user.username} </span>
+					<span className="app-user">Hello, {user.username}</span>
 				</Nav.Item>
 				<Nav.Item index="3">
 					<NavLink to="/profile" className="nav-link">
@@ -32,8 +32,7 @@ const Navbar = ({ user, handleSignout }) => (
 				</Nav.Item>
 				<Nav.Item index="4">
 					<Button type="warning" onClick={handleSignout}>
-						{" "}
-						Sign Out{" "}
+						Sign Out
 					</Button>
 				</Nav.Item>
 			</div>

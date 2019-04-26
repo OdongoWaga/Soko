@@ -63,7 +63,7 @@ const MarketList = ({ searchResults }) => {
 											<Link className="link" to={`/markets/${market.id}`}>
 												{market.name}
 											</Link>{" "}
-											<span style={{ color: "var(--darkAmazonOrange)" }}>
+											<span style={{ color: "orange" }}>
 												{market.products.items.length}
 											</span>
 											<img
