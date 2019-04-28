@@ -5,7 +5,6 @@ export const createMarket = `mutation CreateMarket($input: CreateMarketInput!) {
   createMarket(input: $input) {
     id
     name
-    tags
     products {
       items {
         id
@@ -17,6 +16,7 @@ export const createMarket = `mutation CreateMarket($input: CreateMarketInput!) {
       }
       nextToken
     }
+    tags
     owner
     createdAt
   }
@@ -26,7 +26,6 @@ export const updateMarket = `mutation UpdateMarket($input: UpdateMarketInput!) {
   updateMarket(input: $input) {
     id
     name
-    tags
     products {
       items {
         id
@@ -38,6 +37,7 @@ export const updateMarket = `mutation UpdateMarket($input: UpdateMarketInput!) {
       }
       nextToken
     }
+    tags
     owner
     createdAt
   }
@@ -47,7 +47,6 @@ export const deleteMarket = `mutation DeleteMarket($input: DeleteMarketInput!) {
   deleteMarket(input: $input) {
     id
     name
-    tags
     products {
       items {
         id
@@ -59,6 +58,7 @@ export const deleteMarket = `mutation DeleteMarket($input: DeleteMarketInput!) {
       }
       nextToken
     }
+    tags
     owner
     createdAt
   }
@@ -71,10 +71,10 @@ export const createProduct = `mutation CreateProduct($input: CreateProductInput!
     market {
       id
       name
-      tags
       products {
         nextToken
       }
+      tags
       owner
       createdAt
     }
@@ -97,10 +97,10 @@ export const updateProduct = `mutation UpdateProduct($input: UpdateProductInput!
     market {
       id
       name
-      tags
       products {
         nextToken
       }
+      tags
       owner
       createdAt
     }
@@ -123,10 +123,10 @@ export const deleteProduct = `mutation DeleteProduct($input: DeleteProductInput!
     market {
       id
       name
-      tags
       products {
         nextToken
       }
+      tags
       owner
       createdAt
     }
